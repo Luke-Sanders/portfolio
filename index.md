@@ -5,7 +5,7 @@ hide: true
 show_reading_time: false
 ---
 
-Hi! My name is Luke Sanders
+Hi! My name is Luke H. Sanders
 
 ### Development Environment
 
