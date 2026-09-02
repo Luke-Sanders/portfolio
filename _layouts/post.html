@@ -136,8 +136,8 @@ Check if this is a course lesson and determine which course context to use
   const STORAGE_KEY = `${COURSE}-lesson-completion`;
   const STATUS_AUTO_HIDE_MS = 5000;
   const FILE_SIZE_LIMIT_MB = 10;
-  const ASSIGNMENT_ID = {{ page.assignment_id | default: 'null' }};
-  const ASSIGNMENT_NAME = {{ page.assignment_name | default: 'null' | jsonify }};
+  const ASSIGNMENT_ID = "{{ page.assignment_id | default: 'null' }}";
+  const ASSIGNMENT_NAME = "{{ page.assignment_name | default: 'null' }}";
 
   /**
    * ============================================
@@ -1228,8 +1228,8 @@ Check if this is a course lesson and determine which course context to use
     </div>
 
     <script>
-      const ASSIGNMENT_ID = {{ page.assignment_id | default: 'null' }};
-      const ASSIGNMENT_NAME = {{ page.assignment_name | default: 'null' | jsonify }};
+      const ASSIGNMENT_ID = '{{ page.assignment_id | default: "null" }}';
+      const ASSIGNMENT_NAME = '{{ page.assignment_name | default: "null" }}';
 
       // Submission type switching
       function switchSubmissionType(type) {
@@ -1467,17 +1467,6 @@ Check if this is a course lesson and determine which course context to use
   {%- endif -%}
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
-  <!-- Enhanced Analytics Tracking -->
-  <script type="module">
-    import { pythonURI, javaURI, fetchOptions } from '{{ site.baseurl }}/assets/js/api/config.js';
-    window.pythonURI = pythonURI;
-    window.javaURI = javaURI;
-    window.fetchOptions = fetchOptions;
-  </script>
-  <script src="{{ site.baseurl }}/assets/js/ocs-analytics-enhanced.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/code-runner-analytics.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/lesson-completion.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/lesson-completion-bigsix.js"></script>
 </article>
 
 {% endif %}
