@@ -68,8 +68,8 @@ Hi! My name is Luke H. Sanders
 > Here is my game progress through coding, click to see these in the browser
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="{{site.baseurl}}/snake" class="btn">
-        Snake
+    <a href="https://github.com/Luke-Sanders/portfolio/tree/main/_notebooks" class="btn">
+        Class Work
     </a>
     <a href="{{site.baseurl}}/gamify/parallax" class="btn" style="background-color: var(--green); ">
         Fish
