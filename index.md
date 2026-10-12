@@ -71,7 +71,7 @@ Hi! My name is Luke H. Sanders
     <a href="https://github.com/Luke-Sanders/portfolio/tree/main/_notebooks" class="btn">
         Class Work
     </a>
-    <a href="{{site.baseurl}}/csp/2018-practice-exam-mcq-reflection/" class="btn" style="background-color: var(--green); ">
+    <a href="{{ '/csp/2018-practice-exam-mcq-reflection/' | relative_url }}" class="btn" style="background-color: var(--green); ">
         Blogs
     </a>
     <a href="{{site.baseurl}}/gamify" class="btn" style="background-color: var(--teal);">
